@@ -8,45 +8,53 @@
 </head>
 <body>
 
-    <!-- Personal Card -->
-    <section class="profile-card">
-        <div class="profile-info">
+    <!-- Personal Info Card -->
+    <section class="card profile-card">
+        <div class="card-left">
             <h1><strong>Wenxin Fu</strong></h1>
             <p class="position">Master Student</p>
             <p class="affiliation">Beijing University of Posts and Telecommunications</p>
-            <p class="interests">Audio-driven Human Animation | Diffusion Models | Multimodal Learning</p>
+            <p class="interests">Audio-driven Human Animation, Diffusion Models, Multimodal Learning</p>
+            <div class="social-links">
+                <a href="https://github.com/Wx-Fu" target="_blank">GitHub</a>
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=72igOSwAAAAJ" target="_blank">Google Scholar</a>
+            </div>
         </div>
-        <div class="profile-photo">
+        <div class="card-right">
             <img src="images/avatar.jpg" alt="Profile Photo">
         </div>
     </section>
 
     <!-- Publications -->
-    <section class="publications">
-        <h2>Publications</h2>
-        <div class="cards">
+    <h2 class="section-title">Publications</h2>
 
-            <!-- Paper Card -->
-            <div class="card">
-                <div class="card-header">
-                    <span class="badge">AAAI 2025</span>
-                    <h3 class="paper-title">Controllable 3D Dance Generation using Diffusion-Based Transformer U-Net</h3>
-                </div>
+    <section class="publication-list">
+        <!-- Paper 1 -->
+        <div class="card publication-card">
+            <div class="card-left">
+                <img src="images/paper1.jpg" alt="Paper Image">
+            </div>
+            <div class="card-right">
+                <span class="badge">AAAI 2025</span>
+                <h3 class="paper-title">Controllable 3D Dance Generation using Diffusion-Based Transformer U-Net</h3>
                 <p class="paper-authors">
                     Puyuan Guo, Tuo Hao, <strong>Wenxin Fu</strong>, Yingming Gao, Ya Li
                 </p>
                 <p class="paper-summary">
-                    We introduce a controllable dance generation method based on diffusion models that uses 2D keypoint sequences to guide 3D motion synthesis. Experiments on AIST++ and in-the-wild videos show our approach is effective and offers improved controllability.
+                    We introduce a controllable dance generation method based on diffusion models that uses 2D keypoint sequences to guide 3D motion synthesis. Experiments on AIST++ and in-the-wild videos show our approach is effective and offers improved controllability over existing methods.
                 </p>
                 <a class="btn" href="https://ojs.aaai.org/index.php/AAAI/article/view/32339" target="_blank">Read Paper</a>
             </div>
+        </div>
 
-            <!-- Paper Card -->
-            <div class="card">
-                <div class="card-header">
-                    <span class="badge">InterSpeech 2025</span>
-                    <h3 class="paper-title">EEG-based Voice Conversion: Hearing the Voice of Your Brain</h3>
-                </div>
+        <!-- Paper 2 -->
+        <div class="card publication-card">
+            <div class="card-left">
+                <img src="images/paper2.jpg" alt="Paper Image">
+            </div>
+            <div class="card-right">
+                <span class="badge">InterSpeech 2025</span>
+                <h3 class="paper-title">EEG-based Voice Conversion: Hearing the Voice of Your Brain</h3>
                 <p class="paper-authors">
                     Yizhong Geng, <strong>Wenxin Fu</strong>, Qihang Lu, Bingsong Bai, Cong Wang, Yingming Gao, Ya Li
                 </p>
@@ -55,7 +63,6 @@
                 </p>
                 <a class="btn" href="https://www.isca-archive.org/interspeech_2025/geng25b_interspeech.pdf" target="_blank">Read Paper</a>
             </div>
-
         </div>
     </section>
 
