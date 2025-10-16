@@ -3,31 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Homepage</title>
+    <title>Wenxin Fu - Homepage</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Personal Introduction -->
-    <header class="intro">
-        <img src="images/avatar.jpg" alt="Profile Photo" class="avatar">
-        <h1>Wenxin Fu</h1>
-        <p>Master Student at Beijing University of Posts and Telecommunications</p>
-        <p>Email: <a href="mailto:youremail@example.com">fuwenxin2003@bupt.edu.cn</a></p>
-        <div class="social-links">
-            <a href="https://github.com/Wx-Fu" target="_blank">GitHub</a>
-            <a href="https://scholar.google.com/citations?hl=zh-CN&user=72igOSwAAAAJ" target="_blank">Google Scholar</a>
+    <!-- Personal Card -->
+    <section class="profile-card">
+        <div class="profile-info">
+            <h1><strong>Wenxin Fu</strong></h1>
+            <p class="position">Master Student</p>
+            <p class="affiliation">Beijing University of Posts and Telecommunications</p>
+            <p class="interests">Audio-driven Human Animation | Diffusion Models | Multimodal Learning</p>
         </div>
-    </header>
-
-    <!-- Research Areas -->
-    <section class="research">
-        <h2>Research Interests</h2>
-        <ul>
-            <li>Audio-driven Human Animation</li>
-            <li>Diffusion Models</li>
-            <li>Multimodal Learning</li>
-        </ul>
+        <div class="profile-photo">
+            <img src="images/avatar.jpg" alt="Profile Photo">
+        </div>
     </section>
 
     <!-- Publications -->
@@ -35,58 +26,34 @@
         <h2>Publications</h2>
         <div class="cards">
 
-            <!-- Example Paper Card -->
+            <!-- Paper Card -->
             <div class="card">
-              <img src="images/paper1.jpg" alt="Paper Image">
-              <div class="card-content">
-                  <!-- Paper title -->
-                  <h3>Controllable 3D Dance Generation using Diffusion-Based Transformer U-Net</h3>
-                  
-                  <!-- Authors -->
-                  <p class="paper-authors">
-                      Puyuan Guo, Tuo Hao, <strong>Wenxin Fu</strong>, Yingming Gao, Ya Li
-                  </p>
-                  
-                  <!-- Conference -->
-                  <p class="paper-conference">
-                      Proceedings of AAAI 2025
-                  </p>
-                  
-                  <!-- Summary -->
-                  <p>
-                      We introduce a controllable dance generation method based on diffusion models that uses 2D keypoint sequences to guide 3D motion synthesis. Experiments on AIST++ and in-the-wild videos show our approach is effective and offers improved controllability over existing methods.
-                  </p>
-                  
-                  <!-- Link -->
-                  <a href="https://ojs.aaai.org/index.php/AAAI/article/view/32339" target="_blank">Read Paper</a>
-              </div>
+                <div class="card-header">
+                    <span class="badge">AAAI 2025</span>
+                    <h3 class="paper-title">Controllable 3D Dance Generation using Diffusion-Based Transformer U-Net</h3>
+                </div>
+                <p class="paper-authors">
+                    Puyuan Guo, Tuo Hao, <strong>Wenxin Fu</strong>, Yingming Gao, Ya Li
+                </p>
+                <p class="paper-summary">
+                    We introduce a controllable dance generation method based on diffusion models that uses 2D keypoint sequences to guide 3D motion synthesis. Experiments on AIST++ and in-the-wild videos show our approach is effective and offers improved controllability.
+                </p>
+                <a class="btn" href="https://ojs.aaai.org/index.php/AAAI/article/view/32339" target="_blank">Read Paper</a>
             </div>
 
-            <!-- Another Example Paper -->
+            <!-- Paper Card -->
             <div class="card">
-              <img src="images/paper1.jpg" alt="Paper Image">
-              <div class="card-content">
-                  <!-- Paper title -->
-                  <h3>EEG-based Voice Conversion: Hearing the Voice of Your Brain</h3>
-                  
-                  <!-- Authors -->
-                  <p class="paper-authors">
-                      Yizhong Geng, <strong>Wenxin Fu</strong>, Qihang Lu, Bingsong Bai, Cong Wang, Yingming Gao, Ya Li
-                  </p>
-                  
-                  <!-- Conference -->
-                  <p class="paper-conference">
-                      Proceedings of the InterSpeech2025
-                  </p>
-                  
-                  <!-- Summary -->
-                  <p>
-                      We propose the first EEG-based zero-shot voice conversion system that maps EEG-derived features to target speaker characteristics via an alignment module and three-stage training with a speech-only pre-trained VC model. Experiments on Dutch-iBIDS show reliable conversion without target data, highlighting potential for assistive communication and BCIs.
-                  </p>
-                  
-                  <!-- Link -->
-                  <a href="https://www.isca-archive.org/interspeech_2025/geng25b_interspeech.pdf" target="_blank">Read Paper</a>
-              </div>
+                <div class="card-header">
+                    <span class="badge">InterSpeech 2025</span>
+                    <h3 class="paper-title">EEG-based Voice Conversion: Hearing the Voice of Your Brain</h3>
+                </div>
+                <p class="paper-authors">
+                    Yizhong Geng, <strong>Wenxin Fu</strong>, Qihang Lu, Bingsong Bai, Cong Wang, Yingming Gao, Ya Li
+                </p>
+                <p class="paper-summary">
+                    We propose the first EEG-based zero-shot voice conversion system that maps EEG-derived features to target speaker characteristics via an alignment module and three-stage training with a speech-only pre-trained VC model. Experiments show reliable conversion without target data.
+                </p>
+                <a class="btn" href="https://www.isca-archive.org/interspeech_2025/geng25b_interspeech.pdf" target="_blank">Read Paper</a>
             </div>
 
         </div>
