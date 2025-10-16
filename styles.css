@@ -6,45 +6,78 @@ body {
     color: #222;
 }
 
-/* Personal Card */
-.profile-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fff;
+/* Section Title */
+.section-title {
     max-width: 1000px;
-    margin: 40px auto;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin: 40px auto 20px;
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
-.profile-info {
+/* Generic Card */
+.card {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 8px;
+ box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+/* Left and Right parts of card */
+.card-left {
     flex: 1;
+}
+
+.card-right {
+    flex: 1;
+}
+
+/* Profile Card */
+.profile-card {
+    padding: 20px;
+    align-items: center;
+}
+
+.profile-card .card-left {
     padding-right: 20px;
 }
 
-.profile-info h1 {
-    font-size: 2.2em;
+.profile-card h1 {
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
-.profile-info .position {
+.position {
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.profile-info .affiliation {
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.profile-info .interests {
+.affiliation, .interests {
     font-size: 0.95em;
     color: #555;
+    margin-bottom: 10px;
 }
 
-.profile-photo img {
+.social-links a {
+    display: inline-block;
+    padding: 6px 10px;
+    margin-right: 8px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85em;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.social-links a:hover {
+    background: #333;
+}
+
+.profile-card .card-right img {
     width: 140px;
     height: 140px;
     border-radius: 8px;
@@ -53,51 +86,34 @@ body {
 }
 
 /* Publications */
-.publications {
-    max-width: 1000px;
-    margin: 40px auto;
+.publication-card {
+    align-items: flex-start;
 }
 
-.publications h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    font-weight: bold;
+.publication-card .card-left img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-/* Card style */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: column;
-}
-
-.card-header {
-    margin-bottom: 10px;
+.publication-card .card-right {
+    padding: 15px;
 }
 
 .badge {
     display: inline-block;
-    padding: 3px 8px;
+    padding: 2px 8px;
     font-size: 0.8em;
     background-color: #eee;
     color: #333;
     border-radius: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .paper-title {
     font-size: 1.1em;
     font-weight: bold;
-    margin-top: 5px;
+    margin: 5px 0 10px;
     transition: all 0.2s ease;
 }
 
@@ -115,10 +131,10 @@ body {
 .paper-summary {
     font-size: 0.9em;
     color: #444;
-    flex: 1;
+    margin-bottom: 15px;
 }
 
-/* Button style */
+/* Black Button */
 .btn {
     display: inline-block;
     padding: 8px 12px;
@@ -128,8 +144,6 @@ body {
     font-weight: bold;
     border-radius: 4px;
     text-decoration: none;
-    margin-top: 15px;
-    align-self: flex-start;
     transition: background 0.2s ease;
 }
 
